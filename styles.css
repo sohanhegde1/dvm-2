@@ -75,8 +75,17 @@ overflow-x: hidden;
   transition: transform 1s;
 
 }
-.slide4 img
+.header
 {
+position: absolute;
+top: 0px;
+width: 100%;
+height: 7.5vh;
+
+}
+.img1
+{
+position: absolute;
 height: 100vh;
 width: 100vw; 
 }
@@ -84,9 +93,6 @@ width: 100vw;
 {
   height: 100vh;
   width: 100vw;
-  background-image: url(https://cdn.shopify.com/s/files/1/2642/6578/t/28/assets/Homepage-FSP.jpg?v=137312276529332582651642608202);
-  background-size: cover;
-  background-attachment: fixed;
   position:absolute;
  transform: translateX(400%);
  transition: transform 1s;
@@ -143,7 +149,7 @@ width: 100vw;
   height: 4px;
   width: 100%;
   border-radius: 5px;
-  background:white
+  background:white;
 }
 
 .line1 {
@@ -167,12 +173,13 @@ width: 100vw;
   flex-direction: column;
   padding-right: 150px;
   transition: transform 1s ease-in-out;
-  text-align: right;
+  text-align:right;
   background-color:white;
   position: absolute;
   top: 0px;
 
 }
+
 .menu2
 {
   width: 100%;
@@ -194,11 +201,17 @@ position: absolute;
 bottom: 0px;
 
 }
+.boxy:hover
+{
+opacity: 0.5;
+cursor: pointer;
+}
 .checkbox:hover .hamburger-lines
 {
 justify-content: space-between;
 }
  .menu-items li {
+ 
  
   font-size: 1.375rem;
   font-family:sans-serif;
@@ -244,26 +257,26 @@ color: white;
   transform: translateY(0);
   position: fixed;
 }
-.main1 input[type="checkbox"]:checked ~ .hamburger-lines
+.main1 input[type="checkbox"]:checked ~ .header .hamburger-lines
 {
 justify-content: space-between;
 position: fixed;
 }
 
-.main1 input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
+.main1 input[type="checkbox"]:checked ~ .header .hamburger-lines .line1 {
   transition: transform 2s;
   transition: background-color 1.5s;
   transform: rotate(45deg);
  background-color: black;
 }
 
-.main1 input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
+.main1 input[type="checkbox"]:checked ~ .header .hamburger-lines .line3 {
   transition: transform 2s;
   transition: background-color 1.5s;
   transform: rotate(-45deg);
   background-color: black;
 }
-.main1 input[type="checkbox"]:checked ~  .logo{
+.main1 input[type="checkbox"]:checked ~  .header .logo{
   color:black;
 
   position: fixed;
@@ -334,10 +347,6 @@ cursor: pointer;
 font-size: 3em;
 pointer-events: none;
 }
-#trial1
-{
-position: absolute;
-}
 .box2
 {
 display: grid;
@@ -402,6 +411,14 @@ position: relative;
 {
 position: absolute;
 top:5vh;
+}
+.scroll
+{
+font: 1em sans-serif;
+position: absolute;
+bottom: 40px;
+right: 40px;
+color: white;
 }
 #para1
 {
